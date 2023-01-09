@@ -38,3 +38,20 @@ echo ${array[0]:0:3}
 echo "合并数组"
 merge_array=(${array[@]} ${array_two[@]} ${array_three[*]})
 echo ${merge_array[@]}
+
+#替换数组
+
+echo "替换数组数据"
+array_three=(${array_three[@]/test3/A11})
+echo ${array_three[@]}
+
+
+#unset array
+declare -a unsetArray=(1 2 3 4)
+echo "unset array after"
+echo ${unsetArray[@]}
+# unset unsetArray
+unset unsetArray[3]
+
+echo "unset array before"
+echo ${unsetArray[@]}
