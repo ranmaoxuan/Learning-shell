@@ -10,3 +10,5 @@ function ch_var()
 echo "Before function value var_02:$var_02"
 ch_var
 echo "After function value var_02:$var_02"
+
+
